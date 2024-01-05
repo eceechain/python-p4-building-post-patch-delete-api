@@ -173,7 +173,7 @@ def review_by_id(id):
            return response
        
 
-       elif request.method == 'POST':
+       elif request.method == 'PATCH':
            review = Review.query.filter_by(id=id).first()
 
            for attr in request.form:
